@@ -1225,7 +1225,7 @@
         <!-- Final CTA Section -->
         <div class="final-cta-section">
             <div class="india-map-container">
-                <img src="map.png" alt="LenDenClub Offices Across India" class="india-map">
+                <img src="https://rajatsinhaldc.github.io/map.png" alt="LenDenClub Offices Across India" class="india-map">
             </div>
             
             <div class="cta-main-title">DIVERSIFY YOUR LENDING<br>WITH CONFIDENCE</div>
@@ -1234,10 +1234,10 @@
             
             <div class="store-buttons">
                 <a href="#" class="store-button">
-                    <img src="/Users/rajatsinha/Downloads/Factsheet/playstore.svg" alt="Get it on Google Play">
+                    <img src="https://rajatsinhaldc.github.io/playstore.svg" alt="Get it on Google Play">
                 </a>
                 <a href="#" class="store-button">
-                    <img src="/Users/rajatsinha/Downloads/Factsheet/appstore.svg" alt="Download on the App Store">
+                    <img src="https://rajatsinhaldc.github.io/appstore.svg" alt="Download on the App Store">
                 </a>
             </div>
             
