@@ -127,6 +127,287 @@
             background: #7CB342;
         }
         
+        .cover-page-enhanced {
+        width: 210mm;
+        height: 297mm;
+        padding: 0;
+        margin: 0 auto 20px;
+        background: linear-gradient(135deg, #E3F2FD 0%, #FFFFFF 50%, #F1F8E9 100%);
+        position: relative;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        page-break-after: always;
+        overflow: hidden;
+    }
+    
+    /* Decorative Background Elements */
+    .cover-bg-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.03;
+        background-image: 
+            radial-gradient(circle at 20% 30%, #42A5F5 1px, transparent 1px),
+            radial-gradient(circle at 80% 70%, #7CB342 1px, transparent 1px);
+        background-size: 50px 50px;
+        pointer-events: none;
+    }
+    
+    /* Abstract Geometric Shapes */
+    .cover-geometric-shapes {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 0;
+    }
+    
+    .geometric-circle {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.08;
+    }
+    
+    .geometric-circle-1 {
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, #42A5F5, transparent);
+        top: -100px;
+        right: -100px;
+    }
+    
+    .geometric-circle-2 {
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(circle, #7CB342, transparent);
+        bottom: 100px;
+        left: -50px;
+    }
+    
+    .geometric-lines {
+        position: absolute;
+        bottom: 150px;
+        right: 30px;
+        width: 150px;
+        height: 150px;
+        opacity: 0.05;
+    }
+    
+    .geometric-line {
+        position: absolute;
+        height: 2px;
+        background: #42A5F5;
+        transform-origin: left center;
+    }
+    
+    .geometric-line-1 {
+        width: 80px;
+        top: 20px;
+        transform: rotate(-30deg);
+    }
+    
+    .geometric-line-2 {
+        width: 100px;
+        top: 50px;
+        transform: rotate(15deg);
+    }
+    
+    .geometric-line-3 {
+        width: 60px;
+        top: 80px;
+        transform: rotate(-45deg);
+    }
+    
+    .cover-content-wrapper {
+        position: relative;
+        z-index: 1;
+        padding: 20mm 18mm;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .cover-logo-section-enhanced {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .cover-logo-img-enhanced {
+        height: 60px;
+        width: auto;
+    }
+    
+    .cover-badge {
+        background: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #42A5F5;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border: 2px solid #42A5F5;
+    }
+    
+    .cover-hero-enhanced {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 30px 0;
+    }
+    
+    .cover-hero-frame-enhanced {
+        width: 100%;
+        max-width: 650px;
+        aspect-ratio: 16/10;
+        position: relative;
+    }
+    
+    .cover-hero-image-wrapper-enhanced {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        border: 5px solid white;
+        position: relative;
+    }
+    
+    .cover-hero-image-wrapper-enhanced::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        background: linear-gradient(135deg, #42A5F5, #7CB342, #C0D725);
+        border-radius: 20px;
+        z-index: -1;
+    }
+    
+    .cover-hero-image-enhanced {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    /* Decorative Corner Accents around Image */
+    .corner-accent {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 3px solid;
+        z-index: 2;
+    }
+    
+    .corner-top-left {
+        top: -15px;
+        left: -15px;
+        border-right: none;
+        border-bottom: none;
+        border-color: #42A5F5;
+        border-radius: 12px 0 0 0;
+    }
+    
+    .corner-bottom-right {
+        bottom: -15px;
+        right: -15px;
+        border-left: none;
+        border-top: none;
+        border-color: #7CB342;
+        border-radius: 0 0 12px 0;
+    }
+    
+    .cover-title-section-enhanced {
+        text-align: center;
+        padding: 0 40px;
+        margin-top: 20px;
+    }
+    
+    .cover-main-title-enhanced {
+        font-size: 50px;
+        font-weight: 900;
+        color: #1a1a1a;
+        margin-bottom: 0;
+        line-height: 1.1;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+    }
+    
+    .cover-subtitle-enhanced {
+        font-size: 50px;
+        font-weight: 900;
+        background: linear-gradient(135deg, #42A5F5 0%, #1976D2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 30px;
+        line-height: 1.1;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+    }
+    
+    .cover-tagline-enhanced {
+        display: inline-block;
+        background: linear-gradient(135deg, #C0D725 0%, #9CCC65 100%);
+        color: #1a1a1a;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 12px 40px;
+        border-radius: 30px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 15px rgba(124, 179, 66, 0.3);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .cover-date-section-enhanced {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .cover-date-line {
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(to right, transparent, #42A5F5);
+    }
+    
+    .cover-date-line.right {
+        background: linear-gradient(to left, transparent, #42A5F5);
+    }
+    
+    .cover-date-enhanced {
+        background: #42A5F5;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px 30px;
+        border-radius: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 15px rgba(66, 165, 245, 0.3);
+    }
+    
+    /* Decorative dots along the date */
+    .date-dot {
+        width: 8px;
+        height: 8px;
+        background: #42A5F5;
+        border-radius: 50%;
+    }
+
         /* Cover Page Styles */
         .cover-page {
             width: 210mm;
@@ -871,39 +1152,57 @@
 </head>
 <body>
     <!-- Cover Page -->
-    <div class="cover-page">
-        <div class="logo-section">
+    <div class="cover-page-enhanced">
+    <div class="cover-bg-pattern"></div>
+    
+    <!-- Abstract Geometric Shapes -->
+    <div class="cover-geometric-shapes">
+        <div class="geometric-circle geometric-circle-1"></div>
+        <div class="geometric-circle geometric-circle-2"></div>
+        <div class="geometric-lines">
+            <div class="geometric-line geometric-line-1"></div>
+            <div class="geometric-line geometric-line-2"></div>
+            <div class="geometric-line geometric-line-3"></div>
+        </div>
+    </div>
+    
+    <div class="cover-content-wrapper">
+        <div class="cover-logo-section-enhanced">
             <img src="https://www.lendenclub.com/wp-content/uploads/2024/11/logo-lendenclub-p2p-lending-2x.png" 
                  alt="LenDenClub Logo" 
-                 class="logo-img">
+                 class="cover-logo-img-enhanced">
+            <div class="cover-badge">SINCE 2015</div>
         </div>
         
-        <div class="hero-section">
-            <div class="hero-frame">
-                <div class="hero-frame-wrapper">
-                    <img src="https://img.freepik.com/premium-photo/indian-family-sitting-sofa-using-smartphone-laptop-tablet-watching-movie-surfing-internet_466689-7254.jpg" 
+        <div class="cover-hero-enhanced">
+            <div class="cover-hero-frame-enhanced">
+                <div class="corner-accent corner-top-left"></div>
+                <div class="corner-accent corner-bottom-right"></div>
+                <div class="cover-hero-image-wrapper-enhanced">
+                    <img src="hero.jpeg" 
                          alt="Indian family using technology" 
-                         class="hero-image"
+                         class="cover-hero-image-enhanced"
                          onerror="this.src='https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop'">
                 </div>
             </div>
         </div>
         
-        <div class="cover-title-section">
-            <div class="cover-main-title">India's Largest</div>
-            <div class="cover-subtitle">P2P Lending Platform</div>
+        <div class="cover-title-section-enhanced">
+            <div class="cover-main-title-enhanced">India's Largest</div>
+            <div class="cover-subtitle-enhanced">P2P Lending Platform</div>
             
-            <div class="cover-tagline-wrapper">
-                <div class="cover-line-left"></div>
-                <div class="cover-tagline">Platform Performance Factsheet</div>
-            </div>
+            <div class="cover-tagline-enhanced">Platform Performance Factsheet</div>
             
-            <div class="cover-date-wrapper">
-                <div class="cover-date">September 2025</div>
-                <div class="cover-dot"></div>
+            <div class="cover-date-section-enhanced">
+                <div class="cover-date-line"></div>
+                <div class="date-dot"></div>
+                <div class="cover-date-enhanced">September 2025</div>
+                <div class="date-dot"></div>
+                <div class="cover-date-line right"></div>
             </div>
         </div>
     </div>
+</div>
     
     <!-- Main Content Page 2: CEO + Company Info + Platform Stats -->
     <div class="page page-break">
