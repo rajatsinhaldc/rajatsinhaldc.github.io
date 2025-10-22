@@ -1225,7 +1225,7 @@
         <!-- Final CTA Section -->
         <div class="final-cta-section">
             <div class="india-map-container">
-                <img src="/Users/rajatsinha/Downloads/Factsheet/map.png" alt="LenDenClub Offices Across India" class="india-map">
+                <img src="map.png" alt="LenDenClub Offices Across India" class="india-map">
             </div>
             
             <div class="cta-main-title">DIVERSIFY YOUR LENDING<br>WITH CONFIDENCE</div>
