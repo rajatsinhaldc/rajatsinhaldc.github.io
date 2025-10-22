@@ -292,59 +292,119 @@
         }
         
         /* CEO Message Section */
-        .ceo-section {
-            margin-bottom: 20px;
-            display: flex;
-            gap: 15px;
-            align-items: flex-start;
-        }
-        
-        .ceo-image {
-            width: 90px;
-            height: 90px;
-            border-radius: 8px;
-            overflow: hidden;
-            flex-shrink: 0;
-            border: 2px solid var(--primary-blue);
-        }
-        
-        .ceo-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .ceo-content {
-            flex: 1;
-        }
-        
-        .ceo-header {
-            margin-bottom: 10px;
-        }
-        
-        .ceo-header h2 {
-            color: var(--dark-blue);
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 3px;
-        }
-        
-        .ceo-header p {
-            color: var(--primary-blue);
-            font-size: 13px;
-            font-weight: 500;
-        }
-        
-        .ceo-message {
-            color: var(--gray-text);
-            font-size: 12px;
-            line-height: 1.5;
-            text-align: justify;
-        }
-        
-        .ceo-message p {
-            margin-bottom: 8px;
-        }
+        .ceo-section-option1 {
+    margin-bottom: 25px;
+    background: white;
+    padding: 25px 25px 25px 25px;
+    border-radius: 16px;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.ceo-section-option1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #42A5F5 0%, #7CB342 50%, #C0D725 100%);
+}
+
+.ceo-image-option1 {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+}
+
+.ceo-image-frame-option1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border: 4px solid white;
+    position: relative;
+}
+
+.ceo-image-frame-option1::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(135deg, #42A5F5, #7CB342);
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.ceo-image-option1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ceo-quote-icon-option1 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 35px;
+    height: 35px;
+    background: #42A5F5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(66, 165, 245, 0.4);
+    z-index: 1;
+}
+
+.ceo-content-option1 {
+    flex: 1;
+}
+
+.ceo-header-option1 {
+    margin-bottom: 12px;
+    border-left: 4px solid #42A5F5;
+    padding-left: 15px;
+}
+
+.ceo-header-option1 h2 {
+    color: #0D47A1;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: -0.3px;
+}
+
+.ceo-header-option1 p {
+    color: #42A5F5;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ceo-message-option1 {
+    color: #424242;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.ceo-message-option1 p {
+    margin-bottom: 10px;
+}
         
         /* Section Title */
         .section-title {
@@ -821,7 +881,7 @@
         <div class="hero-section">
             <div class="hero-frame">
                 <div class="hero-frame-wrapper">
-                    <img src="hero.jpeg" 
+                    <img src="https://img.freepik.com/premium-photo/indian-family-sitting-sofa-using-smartphone-laptop-tablet-watching-movie-surfing-internet_466689-7254.jpg" 
                          alt="Indian family using technology" 
                          class="hero-image"
                          onerror="this.src='https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop'">
@@ -848,21 +908,24 @@
     <!-- Main Content Page 2: CEO + Company Info + Platform Stats -->
     <div class="page page-break">
         <!-- CEO Message Section -->
-        <div class="ceo-section">
-            <div class="ceo-image">
-                <img src="https://i.ibb.co/y3f1nnV/bhavin.webp" alt="Bhavin Patel">
-            </div>
-            <div class="ceo-content">
-                <div class="ceo-header">
-                    <h2>Bhavin Patel</h2>
-                    <p>Co-founder & CEO</p>
-                </div>
-                <div class="ceo-message">
-                    <p>Our platform continues to scale steadily with August transaction volumes growing 11% over July. Importantly lenders' returns have remained robust and fully justified. The benefit of these higher returns is being passed on to borrowers reflected in their RoI which has been steadily reducing over the last five months of this financial year.</p>
-                    <p>Alongside a strong loan product mix and excellent collection efficiency this creates a balanced and sustainable ecosystem where both lenders and borrowers see tangible value. With rising customer satisfaction and industry recognition — including awards for Best AI/ML Implementation LOS–LMS Upgradation and Best P2P Platform — we remain committed to building India's most trusted credit platform.</p>
-                </div>
-            </div>
+        <div class="ceo-section-option1">
+    <div class="ceo-image-option1">
+        <div class="ceo-quote-icon-option1">"</div>
+        <div class="ceo-image-frame-option1">
+            <img src="bhavin.jpg" alt="Bhavin Patel">
         </div>
+    </div>
+    <div class="ceo-content-option1">
+        <div class="ceo-header-option1">
+            <h2>Bhavin Patel</h2>
+            <p>Co-founder & CEO</p>
+        </div>
+        <div class="ceo-message-option1">
+            <p>Our platform continues to scale steadily with August transaction volumes growing 11% over July. Importantly lenders' returns have remained robust and fully justified. The benefit of these higher returns is being passed on to borrowers reflected in their RoI which has been steadily reducing over the last five months of this financial year.</p>
+            <p>Alongside a strong loan product mix and excellent collection efficiency this creates a balanced and sustainable ecosystem where both lenders and borrowers see tangible value. With rising customer satisfaction and industry recognition — including awards for Best AI/ML Implementation LOS–LMS Upgradation and Best P2P Platform — we remain committed to building India's most trusted credit platform.</p>
+        </div>
+    </div>
+</div>
         
         <!-- Company Information Section -->
         <div class="section-title">Company Level Information</div>
@@ -1279,7 +1342,7 @@
                 <img src="https://rajatsinhaldc.github.io/map.png" alt="LenDenClub Offices Across India" class="india-map">
             </div>
             
-            <div class="cta-main-title">DIVERSIFY YOUR MONEY<br>WITH CONFIDENCE</div>
+            <div class="cta-main-title">DIVERSIFY YOUR LENDING<br>WITH CONFIDENCE</div>
             
             <div class="cta-description">Download the application to start lending.</div>
             
